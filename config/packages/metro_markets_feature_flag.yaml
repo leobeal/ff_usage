@@ -1,0 +1,8 @@
+metro_markets_feature_flag:
+  cache:
+    driver: 'cache.app'
+    ttl: 60
+  logger: 'monolog.logger'
+  provider: 'configcat'
+  configcat:
+    sdk_key: 'PKDVCLf-Hq-h-kCzMp-L7Q/HhOWfwVtZ0mb30i9wi17GQ' # Get it from ConfigCat Dashboard.

@@ -1,13 +1,14 @@
 {
     "type": "project",
     "license": "proprietary",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "composer/package-versions-deprecated": "1.11.99.2",
+        "configcat/configcat-client": "^5.2",
         "doctrine/annotations": "^1.0",
         "doctrine/doctrine-bundle": "^2.4",
         "doctrine/doctrine-migrations-bundle": "^3.1",
@@ -15,6 +16,7 @@
         "phpdocumentor/reflection-docblock": "^5.2",
         "sensio/framework-extra-bundle": "^6.1",
         "symfony/asset": "5.3.*",
+        "symfony/cache": "5.3.*",
         "symfony/console": "5.3.*",
         "symfony/dotenv": "5.3.*",
         "symfony/expression-language": "5.3.*",
@@ -48,11 +50,12 @@
         "symfony/browser-kit": "^5.3",
         "symfony/css-selector": "^5.3",
         "symfony/debug-bundle": "^5.3",
-        "symfony/maker-bundle": "^1.0",
+        "symfony/maker-bundle": "^1.33",
         "symfony/phpunit-bridge": "^5.3",
         "symfony/stopwatch": "^5.3",
         "symfony/var-dumper": "^5.3",
-        "symfony/web-profiler-bundle": "^5.3"
+        "symfony/web-profiler-bundle": "^5.3",
+        "metro-markets/feature-flag-bundle": "*"
     },
     "config": {
         "optimize-autoloader": true,
@@ -96,5 +99,11 @@
             "allow-contrib": false,
             "require": "5.3.*"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../ff"
+        }
+    ]
 }

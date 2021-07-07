@@ -2,6 +2,9 @@
     "composer/package-versions-deprecated": {
         "version": "1.11.99.2"
     },
+    "configcat/configcat-client": {
+        "version": "v5.2.1"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -88,8 +91,20 @@
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.5"
     },
+    "guzzlehttp/guzzle": {
+        "version": "7.3.0"
+    },
+    "guzzlehttp/promises": {
+        "version": "1.4.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "2.0.0"
+    },
     "laminas/laminas-code": {
         "version": "4.4.0"
+    },
+    "metro-markets/feature-flag-bundle": {
+        "version": "dev-new"
     },
     "monolog/monolog": {
         "version": "2.3.0"
@@ -156,11 +171,23 @@
     "psr/event-dispatcher": {
         "version": "1.0.0"
     },
+    "psr/http-client": {
+        "version": "1.0.1"
+    },
+    "psr/http-factory": {
+        "version": "1.0.1"
+    },
+    "psr/http-message": {
+        "version": "1.0.1"
+    },
     "psr/link": {
         "version": "1.1.1"
     },
     "psr/log": {
         "version": "1.1.4"
+    },
+    "ralouphie/getallheaders": {
+        "version": "3.0.3"
     },
     "sebastian/cli-parser": {
         "version": "1.0.1"
@@ -609,5 +636,8 @@
     },
     "webmozart/assert": {
         "version": "1.10.0"
+    },
+    "z4kn4fein/php-semver": {
+        "version": "v1.0.1"
     }
 }
