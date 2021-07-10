@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d18c5f6c2311f9c3bbfec4e39d2461d9",
+    "content-hash": "1d54d8798cfb6012cbfad8c66367dce9",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -81,16 +81,16 @@
         },
         {
             "name": "configcat/configcat-client",
-            "version": "v5.2.1",
+            "version": "v5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/configcat/php-sdk.git",
-                "reference": "414c821b9b49f031b49d4f83a5857897e512d5e6"
+                "reference": "a3e3f3447fa488810c51e48174d3e4d6aaea2134"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/configcat/php-sdk/zipball/414c821b9b49f031b49d4f83a5857897e512d5e6",
-                "reference": "414c821b9b49f031b49d4f83a5857897e512d5e6",
+                "url": "https://api.github.com/repos/configcat/php-sdk/zipball/a3e3f3447fa488810c51e48174d3e4d6aaea2134",
+                "reference": "a3e3f3447fa488810c51e48174d3e4d6aaea2134",
                 "shasum": ""
             },
             "require": {
@@ -140,9 +140,9 @@
             ],
             "support": {
                 "issues": "https://github.com/configcat/php-sdk/issues",
-                "source": "https://github.com/configcat/php-sdk/tree/v5.2.1"
+                "source": "https://github.com/configcat/php-sdk/tree/v5.3.0"
             },
-            "time": "2021-05-31T16:11:48+00:00"
+            "time": "2021-07-09T08:50:48+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1891,16 +1891,16 @@
         },
         {
             "name": "laminas/laminas-code",
-            "version": "4.4.0",
+            "version": "4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-code.git",
-                "reference": "2b0bb59ade31a045fd3ff0097dc558bb896f6596"
+                "reference": "54251ab2b16c41c6980387839496b235f5f6e10b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/2b0bb59ade31a045fd3ff0097dc558bb896f6596",
-                "reference": "2b0bb59ade31a045fd3ff0097dc558bb896f6596",
+                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/54251ab2b16c41c6980387839496b235f5f6e10b",
+                "reference": "54251ab2b16c41c6980387839496b235f5f6e10b",
                 "shasum": ""
             },
             "require": {
@@ -1954,7 +1954,64 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-06-17T13:39:43+00:00"
+            "time": "2021-07-09T11:58:40+00:00"
+        },
+        {
+            "name": "metro-markets/feature-flag-bundle",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/METRO-Markets/feature-flag-bundle.git",
+                "reference": "289df4d7044b9d6529be1f7c1664979255ab184c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/METRO-Markets/feature-flag-bundle/zipball/289df4d7044b9d6529be1f7c1664979255ab184c",
+                "reference": "289df4d7044b9d6529be1f7c1664979255ab184c",
+                "shasum": ""
+            },
+            "require": {
+                "php": " ^8.0 || ^7.3",
+                "symfony/cache": "^5.0 || ^4.2",
+                "symfony/config": "^5.0 || ^4.2",
+                "symfony/dependency-injection": "^5.0 || ^4.2",
+                "symfony/http-kernel": "^5.1.5 || ^4.2",
+                "symfony/yaml": "^5.0 || ^4.2"
+            },
+            "require-dev": {
+                "configcat/configcat-client": "^5.0 || ^4.0",
+                "phpunit/phpunit": "^9.0 || ^8.0 || ^7.0"
+            },
+            "suggest": {
+                "configcat/configcat-client": "Required whenever provider is configcat",
+                "guzzlehttp/guzzle": "Required whenever provider is rest"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MetroMarkets\\FFBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Beal",
+                    "email": "leonardobeal@gmail.com"
+                }
+            ],
+            "description": "Metro Markets Symfony Feature flag Bundle for quickly integration with configcat and other providers.",
+            "support": {
+                "issues": "https://github.com/METRO-Markets/feature-flag-bundle/issues",
+                "source": "https://github.com/METRO-Markets/feature-flag-bundle/tree/main"
+            },
+            "time": "2021-07-09T20:31:38+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -8223,59 +8280,6 @@
     ],
     "packages-dev": [
         {
-            "name": "metro-markets/feature-flag-bundle",
-            "version": "dev-new",
-            "dist": {
-                "type": "path",
-                "url": "../ff",
-                "reference": "3c47f00e7b57060c034f0d2079d562889f173017"
-            },
-            "require": {
-                "php": "^7.3 || ^8.0",
-                "symfony/cache": "^5.0 || ^4.2",
-                "symfony/config": "^5.0 || ^4.2",
-                "symfony/dependency-injection": "^5.0 || ^4.2",
-                "symfony/http-kernel": "^5.1.5 || ^4.2",
-                "symfony/yaml": "^5.0 || ^4.2"
-            },
-            "require-dev": {
-                "configcat/configcat-client": "^5.0 || ^4.0 || ^3.0 || ^2.0",
-                "guzzlehttp/guzzle": "^7.0 || ^6.0",
-                "phpunit/phpunit": "^9.0 || ^8.0 || ^7.0"
-            },
-            "suggest": {
-                "configcat/configcat-client": "Required whenever provider is configcat",
-                "guzzlehttp/guzzle": "Required whenever provider is rest"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MetroMarkets\\FFBundle\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "MetroMarkets\\FFBundle\\Tests\\": "Tests"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Leo Beal",
-                    "email": "leonardobeal@gmail.com"
-                }
-            ],
-            "description": "Metro Markets Symfony Feature flag Bundle for quickly integration with configcat and other providers.",
-            "transport-options": {
-                "relative": true
-            }
-        },
-        {
             "name": "myclabs/deep-copy",
             "version": "1.10.2",
             "source": {
@@ -10542,8 +10546,10 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "metro-markets/feature-flag-bundle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
