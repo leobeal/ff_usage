@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d54d8798cfb6012cbfad8c66367dce9",
+    "content-hash": "58a628411095c17ebbf04973185b7df1",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -1958,16 +1958,16 @@
         },
         {
             "name": "metro-markets/feature-flag-bundle",
-            "version": "dev-main",
+            "version": "v0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/METRO-Markets/feature-flag-bundle.git",
-                "reference": "289df4d7044b9d6529be1f7c1664979255ab184c"
+                "reference": "42784124b673195761cdd75ce08d6202820c8358"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/METRO-Markets/feature-flag-bundle/zipball/289df4d7044b9d6529be1f7c1664979255ab184c",
-                "reference": "289df4d7044b9d6529be1f7c1664979255ab184c",
+                "url": "https://api.github.com/repos/METRO-Markets/feature-flag-bundle/zipball/42784124b673195761cdd75ce08d6202820c8358",
+                "reference": "42784124b673195761cdd75ce08d6202820c8358",
                 "shasum": ""
             },
             "require": {
@@ -1986,7 +1986,6 @@
                 "configcat/configcat-client": "Required whenever provider is configcat",
                 "guzzlehttp/guzzle": "Required whenever provider is rest"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2009,9 +2008,9 @@
             "description": "Metro Markets Symfony Feature flag Bundle for quickly integration with configcat and other providers.",
             "support": {
                 "issues": "https://github.com/METRO-Markets/feature-flag-bundle/issues",
-                "source": "https://github.com/METRO-Markets/feature-flag-bundle/tree/main"
+                "source": "https://github.com/METRO-Markets/feature-flag-bundle/tree/v0.1"
             },
-            "time": "2021-07-09T20:31:38+00:00"
+            "time": "2021-07-10T20:37:06+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -10547,13 +10546,11 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "metro-markets/feature-flag-bundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.2.5",
+        "php": ">=8.0",
         "ext-ctype": "*",
         "ext-iconv": "*"
     },
